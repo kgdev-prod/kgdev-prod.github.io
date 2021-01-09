@@ -1,3 +1,35 @@
+<!DOCTYPE html>
 <HTML>
-テスト
+<HEAD>
+<meta charset="UTF-8">
+<TITLE>Privacy Policy</TITLE>
+
+<SCRIPT type="text/javascript">
+<!--
+setTimeout("link()", 0);
+function link(){
+    var language = NavigatorGetLanguage();
+    if (language.substr(0, 2) == 'ja')
+        location.href='hotcocoa_ja.html';
+    else 
+        location.href='hotcocoa_en.html';
+}
+
+function NavigatorGetLanguage(){
+    var navigator_obj = window.navigator;
+    if(navigator_obj.language !== undefined)    return navigator_obj.language;
+    if(navigator_obj.browserLanguage !== undefined) return navigator_obj.browserLanguage;
+    if(navigator_obj.userLanguage !== undefined)    return navigator_obj.userLanguage;
+    return "en";
+}
+-->
+</SCRIPT>
+
+</HEAD>
+<BODY>
+
+<H2><a href='hotcocoa_en.html'>English</a></H2>
+<H2><a href='hotcocoa_ja.html'>日本語</a></H2>
+
+</BODY>
 </HTML>
